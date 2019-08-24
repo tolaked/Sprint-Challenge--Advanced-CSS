@@ -1,5 +1,15 @@
 // Home Content
 @import "variables.less";
+
+.widthandmargin {
+  width: 100%;
+  margin-top: 20px;
+}
+.alignAndHeight {
+  height: 50px;
+  text-align: center;
+}
+
 .home {
   .intro {
     img {
@@ -75,8 +85,7 @@
       width: 50%;
 
       @media (max-width: 500px) {
-        width: 100%;
-        margin-top: 20px;
+        .widthandmargin();
         padding-left: 10px;
       }
 
@@ -91,7 +100,7 @@
       }
 
       .btn {
-        background: #22283a;
+        background: @btn-bg-color;
         color: white;
         box-shadow: none;
         width: 20%;
@@ -101,9 +110,8 @@
 
         @media (max-width: 500px) {
           width: 100%;
-          text-align: center;
-          height: 50px;
-          background: #22283a;
+          .alignAndHeight();
+          background: @btn-bg-color;
           padding-top: 15px;
           font-weight: bold;
           font-size: 18px;
@@ -122,8 +130,7 @@
       margin-left: 4%;
 
       @media (max-width: 500px) {
-        width: 100%;
-        margin-top: 20px;
+        .widthandmargin();
       }
 
       img {
@@ -134,8 +141,7 @@
     }
   }
   footer {
-    height: 50px;
-    text-align: center;
+    .alignAndHeight();
     padding-top: 15px;
     color: @footer-font-color;
   }
