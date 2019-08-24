@@ -9,11 +9,18 @@ nav.home-nav {
   .display();
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .display();
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 nav.home-nav a {
   padding-right: 25px;
   text-decoration: none;
   color: @nav-font;
 }
+
 nav.home-nav a:hover {
   cursor: pointer;
   font-weight: bold;
