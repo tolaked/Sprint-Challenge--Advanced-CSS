@@ -8,11 +8,16 @@
 nav.home-nav {
   .display();
   margin-bottom: 10px;
-}
-@media (max-width: 500px) {
-  .display();
-  justify-content: space-evenly;
-  align-items: center;
+  font: @river-bend;
+
+  @media (max-width: 500px) {
+    .display();
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
 }
 
 nav.home-nav a {
