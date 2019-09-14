@@ -1,1 +1,38 @@
+@import "variables.less";
 // Navigation code here
+.display {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+nav.home-nav {
+  .display();
+  margin-bottom: 10px;
+
+  @media (max-width: 500px) {
+    .display();
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+nav.home-nav a {
+  padding-right: 25px;
+  text-decoration: none;
+  color: @nav-font;
+}
+
+nav.home-nav a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.home-logo {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: @header-font-color;
+}
